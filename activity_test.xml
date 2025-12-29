@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvQuestionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuesioner Kesehatan Mental"
+        android:textColor="#4CAF50"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Pertanyaan akan muncul di sini"
+        android:textSize="20sp"
+        android:textColor="#333333" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <RadioButton android:id="@+id/opt0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tidak Pernah" android:padding="12dp"/>
+        <RadioButton android:id="@+id/opt1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Jarang" android:padding="12dp"/>
+        <RadioButton android:id="@+id/opt2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sering" android:padding="12dp"/>
+        <RadioButton android:id="@+id/opt3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sangat Sering" android:padding="12dp"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SELANJUTNYA"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
